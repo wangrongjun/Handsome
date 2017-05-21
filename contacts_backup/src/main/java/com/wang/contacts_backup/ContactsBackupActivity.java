@@ -60,6 +60,7 @@ public class ContactsBackupActivity extends AppCompatActivity implements View.On
 
     private void backup() {
         String backupTxtPath = backupDir + "contacts backup " + DateUtil.getCurrentDateAndTime();
+        backupTxtPath = backupTxtPath.replace(":", "-");
         try {
             FileUtil.write(contactListJson, backupTxtPath);
             M.tl(this, "备份成功，保存在：\n\n" + backupTxtPath);
