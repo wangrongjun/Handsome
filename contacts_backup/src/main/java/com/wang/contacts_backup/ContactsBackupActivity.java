@@ -14,6 +14,7 @@ import com.wang.java_util.DateUtil;
 import com.wang.java_util.FileUtil;
 import com.wang.java_util.GsonUtil;
 import com.wang.java_util.SortUtil;
+import com.wang.java_util.TextUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -59,8 +60,9 @@ public class ContactsBackupActivity extends AppCompatActivity implements View.On
     }
 
     private void backup() {
-        String backupTxtPath = backupDir + "contacts backup " + DateUtil.getCurrentDateAndTime();
-        backupTxtPath = backupTxtPath.replace(":", "-");
+        String fileName = "contacts backup " + DateUtil.getCurrentDateAndTime() + ".txt";
+        fileName = TextUtil.correctFileName(fileName, "");
+        String backupTxtPath = backupDir + fileName;
         try {
             FileUtil.write(contactListJson, backupTxtPath);
             M.tl(this, "备份成功，保存在：\n\n" + backupTxtPath);
