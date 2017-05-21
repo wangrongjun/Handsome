@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_weather_2_small"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner_menu_weather_city"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <include layout="@layout/separated_line_weather_fragment" />
+
+    <include
+        android:id="@+id/head_me"
+        layout="@layout/refresh_head" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/scroll_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_weather_today_weather"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/ic_weather_no" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_weather_today_temperature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tv_weather_today_weather"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="多云"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_weather_today_date_and_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:alpha="0.7"
+                            android:text="11:30 18:14"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_weather_today_wet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="湿度 68%"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_weather_today_wind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="西北风 1级"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/separated_line_weather_fragment" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/weather_item_weather_day1"
+                        layout="@layout/weather_item_weather"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/weather_item_weather_day2"
+                        layout="@layout/weather_item_weather"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/weather_item_weather_day3"
+                        layout="@layout/weather_item_weather"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/weather_item_weather_day4"
+                        layout="@layout/weather_item_weather"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <include layout="@layout/separated_line_weather_fragment" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <include
+                    android:id="@+id/weather_item_tip_sport"
+                    layout="@layout/weather_item_tip" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <include
+                    android:id="@+id/weather_item_tip_clothes"
+                    layout="@layout/weather_item_tip" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <include
+                    android:id="@+id/weather_item_tip_travel"
+                    layout="@layout/weather_item_tip" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <include
+                    android:id="@+id/weather_item_tip_car"
+                    layout="@layout/weather_item_tip" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <include
+                    android:id="@+id/weather_item_tip_cold"
+                    layout="@layout/weather_item_tip" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <include
+                    android:id="@+id/weather_item_tip_ziwaixian"
+                    layout="@layout/weather_item_tip" />
+
+                <include layout="@layout/separated_line_weather_fragment" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.5"
+                    android:gravity="center"
+                    android:text="数据来源  : 百度天气"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

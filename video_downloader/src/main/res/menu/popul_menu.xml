@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btn_menu_imooc"
+        android:title="慕课网" />
+    <item
+        android:id="@+id/btn_menu_jikexueyuan"
+        android:title="极客学院" />
+    <item
+        android:id="@+id/btn_menu_start_all"
+        android:title="全部开始" />
+    <item
+        android:id="@+id/btn_menu_pause_all"
+        android:title="全部暂停" />
+    <item
+        android:id="@+id/btn_menu_clear_all"
+        android:title="清空全部任务" />
+</menu>

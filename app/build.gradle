@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "com.wang.handsome"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+
+    compile project(':wifi_manager')
+    compile project(':video_downloader')
+    compile project(':calculator')
+    compile project(':youdao_dictionary')
+    compile project(':music_player')
+    compile project(':daqian')
+    compile project(':picture_puzzle')
+    compile project(':long_picture_browser')
+    compile project(':contacts_backup')
+
+    compile project(':MyLib:java_lib')
+    compile project(':MyLib:android_lib')
+//    compile project(':ExtraLib:qr_scan')
+//    compile project(':ExtraLib:material_dialog')
+//    compile project(':ExtraLib:sliding_menu')
+//    compile(name: 'slidingmenu', ext: 'aar')
+//    compile project(':ExtraLib:image_cache')
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_fragment"
+    android:orientation="vertical">
+
+    <include layout="@layout/menu_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/logo_daqian" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="大签 v1.0"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/btn_about_introduce"
+        layout="@layout/button_tv_item" />
+
+    <include layout="@layout/separated_line_button" />
+
+    <include
+        android:id="@+id/btn_about_question"
+        layout="@layout/button_tv_item" />
+
+    <include layout="@layout/separated_line_button" />
+
+    <include
+        android:id="@+id/btn_about_help_and_responsible"
+        layout="@layout/button_tv_item" />
+
+    <include layout="@layout/separated_line_button" />
+
+    <include
+        android:id="@+id/btn_about_update"
+        layout="@layout/button_tv_item" />
+
+</LinearLayout>

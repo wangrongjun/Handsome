@@ -1,0 +1,13 @@
+include ':app', ':wifi_manager', ':video_downloader', ':calculator', ':youdao_dictionary', ':music_player', ':daqian', ':picture_puzzle', ':long_picture_browser', ':contacts_backup'
+
+include ':MyLib'
+project(':MyLib').projectDir = new File('../MyLib/')
+include ':MyLib:java_lib'
+include ':MyLib:android_lib'
+
+//include ':ExtraLib'
+//project(':ExtraLib').projectDir = new File('../ExtraLib/')
+//include ':ExtraLib:qr_scan'
+//include ':ExtraLib:image_cache'
+//include ':ExtraLib:material_dialog'
+//include ':ExtraLib:sliding_menu'

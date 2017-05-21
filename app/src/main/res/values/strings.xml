@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">英俊app</string>
+
+    <string name="contacts_backup_name">联系人备份小程序</string>
+    <string name="contacts_backup_description">备份联系人</string>
+
+    <string name="long_picture_browser_name">长图片浏览器</string>
+    <string name="long_picture_browser_description">浏览长图片</string>
+
+    <string name="daqian_name">大签</string>
+    <string name="daqian_description">大签系列的第一版本，本人的处女作。</string>
+
+    <string name="picture_puzzle_name">拼图游戏</string>
+    <string name="picture_puzzle_description">通过移动小方块拼好图片</string>
+
+    <string name="wifi_manager_name">Wifi密码查询</string>
+    <string name="wifi_manager_description">一键查询本机所有已保存的Wifi的密码。</string>
+
+    <string name="video_downloader_name">学习视频批量下载器</string>
+    <string name="video_downloader_description">批量下载慕课网，极客学院等学习网站的某一课程下的所有视频，不包括资料。</string>
+
+    <string name="calculator_name">迷你计算器</string>
+    <string name="calculator_description">一款简洁的小型计算器，支持基本的四则运算和表达式整体输入。</string>
+
+    <string name="youdao_name">有道小词典</string>
+    <string name="youdao_description">有着优美界面的有道查询小词典</string>
+
+    <string name="music_player_name">音乐播放器</string>
+    <string name="music_player_description">一款小型迷你的音乐播放器</string>
+
+</resources>

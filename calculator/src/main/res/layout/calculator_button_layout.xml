@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/textview_style"
+        android:clickable="false"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:textColor="@drawable/text_color_selector"
+        android:textSize="40sp" />
+
+</LinearLayout> <!-- clickable="false"这句是重中之重，没有这句，该TextView就会拦截点击事件，导致gridview的setOnItemClickListener不响应 -->

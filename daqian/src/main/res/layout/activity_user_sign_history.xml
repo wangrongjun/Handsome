@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_fragment"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="签到历史"
+        android:textSize="25sp" />
+
+    <include layout="@layout/separated_line_button" />
+
+    <ListView
+        android:id="@+id/lv_sign_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:divider="@color/light_gray"
+        android:dividerHeight="20dp" >
+    </ListView>
+
+</LinearLayout>

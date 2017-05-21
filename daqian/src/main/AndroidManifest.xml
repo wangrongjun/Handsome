@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wrjxjh.daqian">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity android:name=".extra.activity.AboutActivity" />
+        <activity android:name=".extra.activity.CommentActivity" />
+        <activity android:name=".extra.activity.GuideActivity" />
+        <activity android:name=".core.login.LoginActivity" />
+        <activity
+            android:name=".extra.activity.DaqianMainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".core.register.RegisterActivity" />
+        <activity android:name=".extra.activity.SettingsActivity" />
+        <activity android:name=".extra.activity.ShowPrefActivity" />
+        <activity android:name=".core.edit_user.UpdatePasswordActivity" />
+        <activity android:name=".core.comment.CommentActivity" />
+        <activity android:name=".core.edit_user.UserInfoActivity" />
+        <activity android:name=".core.sign_history.SignHistoryActivity" />
+        <activity android:name=".extra.activity.WelcomeActivity" />
+
+        <activity
+            android:name=".extra.activity.ShowDatabaseActivity"
+            android:screenOrientation="landscape" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

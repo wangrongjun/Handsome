@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_fragment"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_back" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <include
+        android:id="@+id/btn_user_info_head"
+        layout="@layout/button_user_item_head" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include
+        android:id="@+id/btn_user_info_username"
+        layout="@layout/button_user_info_item_and_info" />
+
+    <include layout="@layout/separated_line_button" />
+
+    <include
+        android:id="@+id/btn_user_info_nickname"
+        layout="@layout/button_user_info_item_and_info" />
+
+    <include layout="@layout/separated_line_button" />
+
+    <include
+        android:id="@+id/btn_user_info_tdcpic"
+        layout="@layout/button_user_info_item_tdcpic" />
+
+    <include layout="@layout/separated_line_button" />
+
+    <include
+        android:id="@+id/btn_user_info_sex"
+        layout="@layout/button_user_info_item_and_info" />
+
+</LinearLayout>
