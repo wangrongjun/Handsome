@@ -39,6 +39,7 @@ public class ContactsBackupActivity extends AppCompatActivity implements View.On
         List<ContactUtil.Contact> contacts = ContactUtil.readContacts(this);
         contacts = SortUtil.sortChina(contacts, "contactName", false);
         contactListJson = GsonUtil.formatJson(contacts);
+        contactListJson = contactListJson.replace("\n", "\r\n");
         tvShow.setText(contactListJson);
     }
 
